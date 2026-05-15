@@ -36,12 +36,12 @@ The AI writes the summary. You review and commit it.
 
 <!-- AI appends new sessions here. Oldest entries are pruned automatically. -->
 
-### [YYYY-MM-DD] — Initial project setup
-**Built:** Project scaffold, context files, base FastAPI structure
-**Decided:** PostgreSQL for primary DB, Redis for cache, JWT for auth
-**Deferred:** Multi-tenancy — revisit at 1000 users
-**Gotchas:** None yet
-**Patterns used:** Repository pattern for all DB access, centralized config in `core/config.py`
+### 2026-05-15 — Initial project setup & generic restructuring
+**Built:** Full generic AI context system: 11 architectural rules (.ai/rules), 10 agent templates (.ai/agents), 7 doc templates (.ai/docs), and generic skills.
+**Decided:** Organize all AI-related logic under `.ai/` for a clean root. Root CLAUDE.md serves as the session manager.
+**Deferred:** Specific implementation examples (FastAPI/Postgres) — moved to templates to keep the core repo generic.
+**Gotchas:** Git push failed initially due to RPC buffer limits; fixed with `git config http.postBuffer`.
+**Patterns used:** Rule-based context loading, specialized agent personas, and `compose.sh` for custom context building.
 
 ***
 
