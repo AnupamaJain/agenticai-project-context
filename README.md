@@ -39,6 +39,33 @@ Pay ~1,500 tokens upfront. Save 50,000 tokens of corrections.
 > Remove `50-rag-system.md` and `55-data-model-versioning.md`
 > if your project has no AI/ML component.
 
+## Templates & Examples
+
+The `templates/` directory provides generic starting points for common documentation and agent definitions:
+
+- **`templates/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
+- **`templates/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
+- **`templates/skills/`** — Reusable automation patterns and skill templates.
+
+## Customization Script
+
+Use the provided script to build a custom `CLAUDE.md` tailored to your project:
+
+```bash
+# All rules
+./scripts/compose.sh > CLAUDE.md
+
+# Backend only (e.g. FastAPI/Django/Rails)
+./scripts/compose.sh 00 10 30 70 85 90 99 > CLAUDE.md
+
+# Frontend only (e.g. Next.js/React/Vue)
+./scripts/compose.sh 00 20 70 85 90 99 > CLAUDE.md
+
+# AI/ML/RAG focused
+./scripts/compose.sh 00 50 55 60 70 99 > CLAUDE.md
+```
+
+
 ## How to Use
 
 1. Copy the `context/` folder into your project root
