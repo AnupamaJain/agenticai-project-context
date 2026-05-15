@@ -49,7 +49,14 @@ The `.ai/` directory provides generic starting points for common documentation, 
 
 - **`.ai/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
 - **`.ai/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
-- **`.ai/skills/`** — Reusable automation patterns and skill templates.
+- **`.ai/skills/`** — Reusable automation patterns including:
+  - `deploy-app`: Standardized deployment workflows.
+  - `add-webhook`: Secure receiver implementation.
+  - `data-ingestion`: RAG/Data pipeline patterns.
+  - `generate-unit-tests`: Automated test suite creation.
+  - `security-scan`: Proactive vulnerability auditing.
+  - `setup-project`: Repository bootstrapping.
+  - `build-mcp-server`: AI tool integration.
 
 ## Customization Script
 
