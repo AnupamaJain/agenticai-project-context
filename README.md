@@ -39,13 +39,13 @@ Pay ~1,500 tokens upfront. Save 50,000 tokens of corrections.
 > Remove `50-rag-system.md` and `55-data-model-versioning.md`
 > if your project has no AI/ML component.
 
-## Templates & Examples
+## AI Assets & Templates
 
-The `.ai/templates/` directory provides generic starting points for common documentation and agent definitions:
+The `.ai/` directory provides generic starting points for common documentation, agent definitions, and skills:
 
-- **`.ai/templates/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
-- **`.ai/templates/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
-- **`.ai/templates/skills/`** — Reusable automation patterns and skill templates.
+- **`.ai/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
+- **`.ai/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
+- **`.ai/skills/`** — Reusable automation patterns and skill templates.
 
 ## Customization Script
 
