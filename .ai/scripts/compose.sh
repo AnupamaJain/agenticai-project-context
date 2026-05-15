@@ -10,7 +10,7 @@
 
 set -e
 
-RULES_DIR="$(cd "$(dirname "$0")/../context" && pwd)"
+RULES_DIR="$(cd "$(dirname "$0")/../rules" && pwd)"
 
 echo "# Project Instructions"
 echo ""

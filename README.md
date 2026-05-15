@@ -14,8 +14,8 @@ HOW your project works.
 
 ## The Solution
 
-A `context/` folder at the root of your repo. 11 short Markdown
-files. One instruction set per layer of your system.
+An `.ai/` folder at the root of your repo. 11 short Markdown
+files in `.ai/rules/`. One instruction set per layer of your system.
 
 Load them at the start of every AI session.
 Pay ~1,500 tokens upfront. Save 50,000 tokens of corrections.
@@ -24,28 +24,28 @@ Pay ~1,500 tokens upfront. Save 50,000 tokens of corrections.
 
 | File | Layer | Purpose |
 |------|-------|---------|
-| `00-global-architect.md` | Foundation | Architecture principles + identity |
-| `10-backend.md` | API Layer | Framework rules, clean architecture |
-| `30-database.md` | Data Layer | Schema, migrations, query rules |
-| `35-api-contracts.md` | Contracts | Versioning, consistency, deprecation |
-| `40-cache.md` | Cache Layer | TTLs, key naming, invalidation rules |
-| `50-rag-system.md` | AI/LLM | RAG pipeline separation + grounding |
-| `55-data-model-versioning.md` | ML | Dataset versioning, reproducibility |
-| `70-security.md` | Security | Non-negotiables, AI-specific risks |
-| `85-error-observability.md` | Ops | Logging, tracing, health checks |
-| `90-devops-deployment.md` | DevOps | Docker, CI/CD, cloud guardrails |
-| `99-response-style.md` | AI Behavior | How the AI responds and formats code |
+| `.ai/rules/00-global-architect.md` | Foundation | Architecture principles + identity |
+| `.ai/rules/10-backend.md` | API Layer | Framework rules, clean architecture |
+| `.ai/rules/30-database.md` | Data Layer | Schema, migrations, query rules |
+| `.ai/rules/35-api-contracts.md` | Contracts | Versioning, consistency, deprecation |
+| `.ai/rules/40-cache.md` | Cache Layer | TTLs, key naming, invalidation rules |
+| `.ai/rules/50-rag-system.md` | AI/LLM | RAG pipeline separation + grounding |
+| `.ai/rules/55-data-model-versioning.md` | ML | Dataset versioning, reproducibility |
+| `.ai/rules/70-security.md` | Security | Non-negotiables, AI-specific risks |
+| `.ai/rules/85-error-observability.md` | Ops | Logging, tracing, health checks |
+| `.ai/rules/90-devops-deployment.md` | DevOps | Docker, CI/CD, cloud guardrails |
+| `.ai/rules/99-response-style.md` | AI Behavior | How the AI responds and formats code |
 
 > Remove `50-rag-system.md` and `55-data-model-versioning.md`
 > if your project has no AI/ML component.
 
 ## Templates & Examples
 
-The `templates/` directory provides generic starting points for common documentation and agent definitions:
+The `.ai/templates/` directory provides generic starting points for common documentation and agent definitions:
 
-- **`templates/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
-- **`templates/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
-- **`templates/skills/`** — Reusable automation patterns and skill templates.
+- **`.ai/templates/agents/`** — Generic personas for Backend, Frontend, DB Architect, Code Reviewer, and more.
+- **`.ai/templates/docs/`** — Templates for PRD, Architecture, API Spec, DB Schema, and Deployment.
+- **`.ai/templates/skills/`** — Reusable automation patterns and skill templates.
 
 ## Customization Script
 
@@ -53,26 +53,26 @@ Use the provided script to build a custom `CLAUDE.md` tailored to your project:
 
 ```bash
 # All rules
-./scripts/compose.sh > CLAUDE.md
+./.ai/scripts/compose.sh > CLAUDE.md
 
 # Backend only (e.g. FastAPI/Django/Rails)
-./scripts/compose.sh 00 10 30 70 85 90 99 > CLAUDE.md
+./.ai/scripts/compose.sh 00 10 30 70 85 90 99 > CLAUDE.md
 
 # Frontend only (e.g. Next.js/React/Vue)
-./scripts/compose.sh 00 20 70 85 90 99 > CLAUDE.md
+./.ai/scripts/compose.sh 00 20 70 85 90 99 > CLAUDE.md
 
 # AI/ML/RAG focused
-./scripts/compose.sh 00 50 55 60 70 99 > CLAUDE.md
+./.ai/scripts/compose.sh 00 50 55 60 70 99 > CLAUDE.md
 ```
 
 
 ## How to Use
 
-1. Copy the `context/` folder into your project root
+1. Copy the `.ai/` folder into your project root
 2. Fill in the `[YOUR FRAMEWORK]` placeholders (takes ~15 min)
 3. Tell your AI assistant:
-   > "Read all files in the /context folder before starting."
-4. Works with: Claude, Cursor, GitHub Copilot, Windsurf, Gemini
+   > "Read CLAUDE.md and all files in the .ai/rules folder before starting."
+4. Works with: Claude, Cursor, GitHub Copilot, Windsurf, Gemini (Antigravity)
 
 ## Session Workflow
 
