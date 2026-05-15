@@ -36,12 +36,16 @@ All architectural rules live in `.ai/rules/`. Load them all before implementing:
 .ai/rules/
 ├── 00-global-architect.md   ← Start here always
 ├── 10-backend.md
+├── 20-frontend.md
 ├── 30-database.md
 ├── 35-api-contracts.md
 ├── 40-cache.md
-├── 50-rag-system.md         ← Only if AI/LLM in stack
-├── 55-data-model-versioning.md  ← Only if model training
+├── 45-environment-config.md
+├── 50-rag-system.md
+├── 55-data-model-versioning.md
+├── 60-agents.md
 ├── 70-security.md
+├── 80-testing-quality.md
 ├── 85-error-observability.md
 ├── 90-devops-deployment.md
 └── 99-response-style.md

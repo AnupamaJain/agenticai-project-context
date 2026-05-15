@@ -26,12 +26,16 @@ Pay ~1,500 tokens upfront. Save 50,000 tokens of corrections.
 |------|-------|---------|
 | `.ai/rules/00-global-architect.md` | Foundation | Architecture principles + identity |
 | `.ai/rules/10-backend.md` | API Layer | Framework rules, clean architecture |
+| `.ai/rules/20-frontend.md` | UI Layer | Component-driven UI, state, naming |
 | `.ai/rules/30-database.md` | Data Layer | Schema, migrations, query rules |
 | `.ai/rules/35-api-contracts.md` | Contracts | Versioning, consistency, deprecation |
 | `.ai/rules/40-cache.md` | Cache Layer | TTLs, key naming, invalidation rules |
+| `.ai/rules/45-environment-config.md` | Config | Env vars, validation, secrets |
 | `.ai/rules/50-rag-system.md` | AI/LLM | RAG pipeline separation + grounding |
 | `.ai/rules/55-data-model-versioning.md` | ML | Dataset versioning, reproducibility |
+| `.ai/rules/60-agents.md` | AI Agents | Planner, tools, memory, coordination |
 | `.ai/rules/70-security.md` | Security | Non-negotiables, AI-specific risks |
+| `.ai/rules/80-testing-quality.md` | Quality | Unit, integration, mocking, linting |
 | `.ai/rules/85-error-observability.md` | Ops | Logging, tracing, health checks |
 | `.ai/rules/90-devops-deployment.md` | DevOps | Docker, CI/CD, cloud guardrails |
 | `.ai/rules/99-response-style.md` | AI Behavior | How the AI responds and formats code |
